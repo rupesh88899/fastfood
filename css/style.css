@@ -1,0 +1,272 @@
+/* css reset  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+:root {
+    --navbar-height: 60px;
+}
+
+/* before nevbar */
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width : 100%;
+    z-index: -1;
+    opacity: 0.4; 
+    top: 0px;  
+    left: 0px;
+}
+    
+
+
+/* navigation bar  */
+
+#navbar {
+    display: flex;
+    align-items:center;
+    position: sticky;
+    top: 0px;
+    
+}
+ 
+/* navigation bar: logo and image  */
+#logo{
+    margin: -10px 2px;
+}
+
+#logo img{
+    height: 142px;
+    margin: -17px 2px;
+    filter: invert(1);
+    
+}
+
+
+/* navigation bar: list stylin  */
+
+#navbar ul{
+    display: flex; 
+    font-family: 'Ubuntu', sans-serif;  
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    
+}
+
+#navbar ul li a{
+    color: rgb(64, 1, 96);
+    padding: 7px 30px;
+    border-radius: 22px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+/* before home section  */
+
+#home::before{
+    content: "";
+    background: url(../bd.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 62%;
+    width : 100%;
+    z-index: -1;
+    opacity:0.71; 
+    top: 0px;  
+    left: 0px;
+}
+
+
+/* Home section  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+}
+
+#home h1{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 2.9rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* services-container section  */
+
+#services{
+    margin: 54px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 45px;
+    margin: 2px 55px;
+    border-radius: 27px;
+    background-color: rgb(225, 221, 232);
+}
+
+#services .box img{
+    height: 154px;
+    display: block;
+    margin: auto;
+
+}
+#services .box p{
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+
+
+/* clients section  */
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+    opacity:0.4;
+
+}
+#client-section{
+    
+    position: relative;
+
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+     
+}
+
+#client img{
+    height: 110px;
+}  
+
+#client-section h1{
+    margin: 12px;
+}
+
+
+
+
+/* contect section  */
+
+#contect{
+    position: relative;
+}
+#contect::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.7 ;
+    background: url(../contect.jpg) no-repeat center center/cover;
+}
+
+ #contect-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+ }
+
+#contect-box input,
+#contect-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 9px;
+    font-size:1.1rem ;
+}
+
+#contcect-box form{
+    width: 40%;
+
+ }
+
+ #contcect-box label{
+    font-size: 1.9rem;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+
+
+
+
+footer{
+    background-color:black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utality classes */
+ .h-primary{
+    font-size: 2.9rem;
+    padding: 16 px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 23px;
+ }
+
+ .h-secondary{
+    font-size: 1.8rem;
+    
+    padding: px;
+    font-family: 'Ubuntu', sans-serif;
+ }
+
+ .btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    margin: 17px;
+    font-size:1rem ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.centre{
+    text-align: center;
+}
+
+
+
+
